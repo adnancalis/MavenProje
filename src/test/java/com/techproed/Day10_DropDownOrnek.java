@@ -34,5 +34,8 @@ public class Day10_DropDownOrnek {
         WebElement sonucSayisi = driver.findElement(By.xpath("//div[@class='a-section a-spacing-small a-spacing-top-small']"));
         System.out.println(sonucSayisi.getText());
         Assert.assertTrue(sonucSayisi.getText().contains("JAVA"));
+        // CLASS DEĞERİ  :  a-section a-spacing-small a-spacing-top-small
+        //WebElement sonucSayisiCss = driver.findElement(By.cssSelector(".a-section.a-spacing-small.a-spacing-top-small"));
+        //System.out.println(sonucSayisiCss.getText());
     }
 }
